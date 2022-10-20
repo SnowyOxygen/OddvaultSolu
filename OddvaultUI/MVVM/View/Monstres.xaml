@@ -1,0 +1,113 @@
+﻿<UserControl x:Class="Oddvault.MVVM.View.Monstres"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Oddvault.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="#A0A0A0">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="164"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+
+        <StackPanel Grid.Column="0" Margin="20,30,20,30">
+            <Label>Liste monstres</Label>
+            <ListBox>
+                <RadioButton>orc</RadioButton>
+                <RadioButton>goblin</RadioButton>
+                <RadioButton>cesi</RadioButton>
+            </ListBox>
+
+        </StackPanel>
+
+        <StackPanel Grid.Column="1" Margin="10,30,25,30" Background="#D0D0D0" >
+
+            <TextBlock Text="Action" Margin="5" />
+            <ComboBox  x:Name="FinishDropdown" SelectedIndex="0" Padding="2" Margin="5 0" Width="353" HorizontalAlignment="Left">
+                <ComboBoxItem>CRUD</ComboBoxItem>
+                <ComboBoxItem>Ajouter</ComboBoxItem>
+                <ComboBoxItem>Modifier</ComboBoxItem>
+                <ComboBoxItem>Supprimer</ComboBoxItem>
+            </ComboBox>
+            <StackPanel Margin="20 15" Orientation="Horizontal" >
+
+                <StackPanel Width="218" VerticalAlignment="Center" >
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                        <Label>Name :</Label>
+                        <TextBox Width="150"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                        <Label>Vie :</Label>
+                        <TextBox Width="150"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                        <Label>Defense :</Label>
+                        <TextBox Width="150" HorizontalAlignment="Left"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                        <Label>Min ATT :</Label>
+                        <TextBox Width="150"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                        <Label>Max ATT :</Label>
+                        <TextBox Width="150"></TextBox>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Right" Margin="5">
+                        <Label>Score :</Label>
+                        <TextBox Width="150"></TextBox>
+                    </StackPanel>
+
+                </StackPanel>
+                <StackPanel Width="204" Height="271" VerticalAlignment="Top">
+                    <Label HorizontalAlignment="Center">Drops</Label>
+                    <Label Content="item 1"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label>weight</Label>
+                        <TextBox Width="50"></TextBox>
+                        <Label>max</Label>
+                        <TextBox Width="50" ></TextBox>
+                        <Label></Label>
+                    </StackPanel>
+                    <Label Content="item 1"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label>weight</Label>
+                        <TextBox Width="50"></TextBox>
+                        <Label>max</Label>
+                        <TextBox Width="50" ></TextBox>
+                        <Label></Label>
+                    </StackPanel>
+                    <Label Content="item 1"/>
+                    <StackPanel Orientation="Horizontal">
+                        <Label>weight</Label>
+                        <TextBox Width="50"></TextBox>
+                        <Label>max</Label>
+                        <TextBox Width="50" ></TextBox>
+                        <Label></Label>
+                    </StackPanel>
+                    <Label HorizontalAlignment="Center">Dropdown list</Label>
+                    <StackPanel Orientation="Horizontal">
+                        <Label>item1</Label>
+                        <TextBox Width="40" HorizontalAlignment="Center"></TextBox>
+                        <Label Content="%"/>
+                        <Label>item2</Label>
+                        <TextBox Width="40" HorizontalAlignment="Center"></TextBox>
+                        <Label Content="%"/>
+                    </StackPanel>
+                    <StackPanel Orientation="Horizontal" HorizontalAlignment="Center">
+                        <Label>item3</Label>
+                        <TextBox Width="40" HorizontalAlignment="Center"></TextBox>
+                        <Label Content="%"/>
+                    </StackPanel>
+
+                </StackPanel>
+            </StackPanel>
+            <Button Margin="0 10"  Padding="10 5" HorizontalAlignment="Center" Background="ForestGreen">Save</Button>
+        </StackPanel>
+
+
+    </Grid>
+</UserControl>

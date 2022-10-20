@@ -1,0 +1,27 @@
+﻿<ResourceDictionary xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+                    xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml">
+    <!--    <Style TargetType="{x:Type Button}" x:Key="Style1" >
+
+        <Style.Setters>
+
+            <Setter Property="Template" >
+                <Setter.Value>
+                    <ControlTemplate TargetType="Button" >
+                        <Grid VerticalAlignment="Stretch" HorizontalAlignment="Stretch">
+                            <TextBlock Text="{TemplateBinding Property=Content}" VerticalAlignment="Center" Margin="50 0 0 0" />
+                        </Grid>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style.Setters>
+
+        <Style.Triggers>
+            <Trigger Property="IsPressed" Value="True">
+                <Setter Property="Background" Value="red"/> ca ne marche pos  
+            </Trigger>
+        </Style.Triggers>
+
+    </Style>-->
+
+
+</ResourceDictionary>

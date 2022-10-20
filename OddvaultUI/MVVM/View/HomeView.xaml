@@ -1,0 +1,73 @@
+﻿<UserControl x:Class="Oddvault.MVVM.View.HomeView"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Oddvault.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800">
+    <StackPanel>
+        
+        <TextBlock Foreground="gray" FontSize="30" HorizontalAlignment="Left" Margin="0 0 0 20 " >Discover</TextBlock>
+
+        <StackPanel Orientation="Horizontal">
+            
+            <Border Background="Orange" Width="400" Height="200" Margin="10 5 5 5">
+                <Grid>
+                    <StackPanel>
+                        <TextBlock FontSize="24" Foreground="White">TODO LIST</TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Border Background="blue" Width="400" Height="200">
+                <Grid>
+                    <StackPanel>
+                        <TextBlock FontSize="24" Foreground="White">UP DATES</TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            
+        </StackPanel>
+
+        <StackPanel Orientation="Horizontal">
+            <StackPanel.Resources>
+                <Style TargetType="{x:Type Border}">
+                    <Setter Property="Margin" Value="15 0 0 0"/>
+                </Style>
+            </StackPanel.Resources>
+
+            <Border Background="red" Width="150" Height="150" Margin="10 5 5 5">
+                <Grid>
+                    <StackPanel>
+                        <TextBlock FontSize="24" Foreground="White">Donjon</TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+            <Border Background="BlueViolet" Width="150" Height="150">
+                <Grid>
+                    <StackPanel>
+                        <TextBlock FontSize="24" Foreground="White">Items</TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Border Background="Green" Width="150" Height="150">
+                <Grid>
+                    <StackPanel>
+                        <TextBlock FontSize="24" Foreground="White">Joueurs</TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Border>
+            <Border Background="LightPink" Width="150" Height="150">
+                <Grid>
+                    <StackPanel>
+                        <TextBlock FontSize="24" Foreground="White">Recettes</TextBlock>
+                    </StackPanel>
+                </Grid>
+            </Border>
+
+        </StackPanel>
+        
+    </StackPanel>
+</UserControl>

@@ -1,0 +1,75 @@
+﻿<UserControl x:Class="Oddvault.MVVM.View.Items"
+             xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+             xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+             xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006" 
+             xmlns:d="http://schemas.microsoft.com/expression/blend/2008" 
+             xmlns:local="clr-namespace:Oddvault.MVVM.View"
+             mc:Ignorable="d" 
+             d:DesignHeight="450" d:DesignWidth="800"
+             Background="#A0A0A0">
+    <Grid>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="227"></ColumnDefinition>
+            <ColumnDefinition></ColumnDefinition>
+        </Grid.ColumnDefinitions>
+
+        <StackPanel Grid.Column="0" Margin="20,30,20,30">
+            <Label>Liste item</Label>
+            <StackPanel Orientation="Horizontal">
+                <RadioButton Width="70" HorizontalAlignment="Left">
+                    <StackPanel  Orientation="Vertical" VerticalAlignment="Top">
+                        <Label HorizontalAlignment="Center">nom</Label>
+                        <TextBox Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">5</TextBox>
+                        <Label HorizontalAlignment="Center">Type</Label>
+                        <TextBox Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">5</TextBox>
+                        <Label HorizontalAlignment="Center">min</Label>
+                        <TextBox Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">5</TextBox>
+                        <Label HorizontalAlignment="Center">max</Label>
+                        <TextBox Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">5</TextBox>
+                    </StackPanel>
+                </RadioButton>
+                <RadioButton Width="70" HorizontalAlignment="Left">
+                    <StackPanel  Orientation="Vertical" VerticalAlignment="Top">
+                        <Label HorizontalAlignment="Center">nom</Label>
+                        <TextBox Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">5</TextBox>
+                        <Label HorizontalAlignment="Center">Type</Label>
+                        <TextBox Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">5</TextBox>
+                        <Label HorizontalAlignment="Center">min</Label>
+                        <TextBox Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">5</TextBox>
+                        <Label HorizontalAlignment="Center">max</Label>
+                        <TextBox Width="30" HorizontalAlignment="Center" VerticalAlignment="Center">5</TextBox>
+                    </StackPanel>
+                </RadioButton>
+            </StackPanel>
+
+        </StackPanel>
+        <StackPanel Grid.Column="1" Margin="10,30,25,30" Background="#D0D0D0">
+            <TextBlock Text="Action" Margin="5" />
+            <ComboBox  x:Name="FinishDropdown" SelectedIndex="0" Padding="2" Margin="5 0" Width="353" HorizontalAlignment="Left">
+                <ComboBoxItem>CRUD</ComboBoxItem>
+                <ComboBoxItem>Ajouter</ComboBoxItem>
+                <ComboBoxItem>Modifier</ComboBoxItem>
+                <ComboBoxItem>Supprimer</ComboBoxItem>
+            </ComboBox>
+            <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Left">
+                <Label>Nom :</Label>
+                <TextBox Width="150"></TextBox>
+            </StackPanel>
+            <StackPanel Orientation="Horizontal" Margin="10" HorizontalAlignment="Left">
+                <Label>Type  :</Label>
+                <TextBox Width="150"></TextBox>
+            </StackPanel>
+            <Label Margin="7 10">Effect</Label>
+            <StackPanel Orientation="Horizontal" Margin="5">
+                
+                <Label>min:</Label>
+                <TextBox Width="150"></TextBox>
+                <Label>max:</Label>
+                <TextBox Width="150"></TextBox>
+            </StackPanel>
+            <Button Margin="0 10"  Padding="10 5" HorizontalAlignment="Center" Background="ForestGreen">Save</Button>
+        </StackPanel>
+        
+    
+    </Grid>
+</UserControl>
